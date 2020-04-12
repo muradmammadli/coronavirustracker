@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="191dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="#F3F3F3"
+        app:cardCornerRadius="10dp"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/infected1"
+                android:layout_width="50dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="11dp"
+                android:background="@color/colorPlacheHolder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/country1" />
+
+            <View
+                android:id="@+id/tested1"
+                android:layout_width="40dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="11dp"
+                android:background="@color/colorPlacheHolder"
+                android:text="tested"
+                android:textColor="#272727"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/infected1" />
+
+            <View
+                android:id="@+id/country1"
+                android:layout_width="60dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="19dp"
+                android:background="@color/colorPlacheHolder"
+                android:text="country"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+            <View
+                android:id="@+id/recovered1"
+                android:layout_width="40dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="29dp"
+                android:layout_marginLeft="29dp"
+                android:layout_marginTop="11dp"
+                android:background="@color/colorPlacheHolder"
+                android:text="recovered"
+                android:textColor="#272727"
+                app:layout_constraintStart_toEndOf="@+id/tested1"
+                app:layout_constraintTop_toBottomOf="@+id/deceased1" />
+
+            <View
+                android:id="@+id/deceased1"
+                android:layout_width="50dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/colorPlacheHolder"
+                app:layout_constraintStart_toEndOf="@+id/infected1"
+                app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+            <View
+                android:id="@+id/imageView1"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPlacheHolder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
